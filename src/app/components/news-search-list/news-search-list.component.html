@@ -1,0 +1,26 @@
+<h1 class="article-h1">Search Results</h1>
+<div class="link-btn">
+  <a
+    nz-button
+    nzType="link"
+    nzBlock
+    class="link-btn"
+    (click)="closeSearchResults()"
+    >&lt; &lt; Back to Latest Posts</a
+  >
+</div>
+
+<div class="posts" *ngFor="let post of searchResults">
+  <a [href]="post.shortlink" target="_blank" class="posts-link">
+    <div class="posts-post-item">
+      <img
+        [src]="post.jetpack_featured_media_url"
+        alt="Article Image"
+        class="posts-post-item-img"
+      />
+      <br />
+      <h4 class="posts-post-item-title" [innerHTML]="post.title.rendered"></h4>
+      <p class="posts-post-item-slug" [innerHTML]="post.excerpt.rendered"></p>
+    </div>
+  </a>
+</div>

@@ -49,6 +49,7 @@ import { entityConfig } from './entity-metadata';
 import { NewsEntityService } from './services/news-entity.service';
 import { NewsDataService } from './services/news-data.service';
 import { NewsPost, compareNewsPosts } from './models/news-post.model';
+import { NewsSearchListComponent } from './components/news-search-list/news-search-list.component';
 
 registerLocaleData(en);
 
@@ -80,6 +81,7 @@ const entityMetadata: EntityMetadataMap = {
     LoadingComponent,
     MessagesComponent,
     PlaceComponent,
+    NewsSearchListComponent,
   ],
   imports: [
     BrowserModule,

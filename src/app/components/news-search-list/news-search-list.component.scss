@@ -1,0 +1,41 @@
+.posts {
+  display: grid;
+  grid-template-rows: auto 70px;
+
+  &-link {
+    text-decoration: none;
+    color: var(--slate-gray);
+  }
+
+  &-post-item {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 700px;
+    background-color: var(--light-mint-cream);
+    padding: 1.5rem;
+    border: 1px solid var(--light-slate-gray);
+    border-radius: 8px;
+
+    &-img {
+      width: 100%;
+      height: auto;
+      max-width: 600px;
+    }
+
+    &-title {
+      font-size: 1.2rem;
+      padding-top: 1rem;
+      text-align: left;
+      justify-content: left;
+      margin: 0 1.8rem;
+    }
+
+    &-slug {
+      position: relative;
+      text-align: left;
+      justify-content: left;
+      font-size: 1.2rem;
+      margin: 0 1.8rem;
+    }
+  }
+}

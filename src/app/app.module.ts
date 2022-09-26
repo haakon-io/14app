@@ -110,7 +110,6 @@ const entityMetadata: EntityMetadataMap = {
     }),
     StoreModule.forFeature('news', newsReducer),
     EntityDataModule.forRoot(entityConfig),
-    // RouterModule.forChild(newsR)
   ],
   providers: [
     NewsHttpService,

@@ -1,6 +1,6 @@
-# 14app
+# 14app - Let's Make Awesome website code
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3. - RxJs, NgRx and NgZorro. The news section of the website pulls news stories from TechCrunch. The images are all sourced from unsplash.com and I take no credit whatsoever for the images. The news search feature uses fuzzy-search to get results.
 
 ## Development server
 

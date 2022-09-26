@@ -1,0 +1,52 @@
+p {
+  margin: 1.2rem;
+  font-size: 1.2rem;
+  color: var(--bright-maroon);
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
+  letter-spacing: 1rem;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+}
+
+.article {
+  position: relative;
+  margin: 3.5rem;
+  justify-content: left;
+  text-align: left;
+
+  &-a {
+    color: var(--ming);
+  }
+
+  &-h1 {
+    margin-left: 1.4rem;
+    color: var(--slate-gray);
+    font-family: "Orbitron", sans-serif;
+    font-weight: 600;
+    letter-spacing: normal;
+  }
+
+  &-ul {
+    font-size: 1.2rem;
+    color: var(--bright-maroon);
+  }
+}
+
+.link-btn {
+  margin-bottom: 1.2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .article {
+    position: relative;
+    margin: 1rem;
+  }
+}

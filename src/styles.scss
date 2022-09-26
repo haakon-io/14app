@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@use "../src/assets/styles/colors";
+@use "../src/assets/styles/variables";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;700&family=Orbitron:wght@600;900&display=swap");
+
+body {
+  color: var(--slate-gray);
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+  margin-top: 1.4rem;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+strong {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}

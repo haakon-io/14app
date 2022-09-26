@@ -1,0 +1,62 @@
+<div class="container">
+  <h3>Latest News</h3>
+  <div class="search-posts">
+    <!-- <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+      <input
+        type="text"
+        #searchInput
+        nz-input
+        placeholder="Search News Articles"
+      />
+    </nz-input-group>
+    <ng-template #suffixIconButton>
+      <button
+        nz-button
+        nzType="primary"
+        (click)="searchPosts(searchInput.value)"
+        nzSearch
+      >
+        <span nz-icon nzType="search"></span>
+      </button>
+    </ng-template>
+  </div>-->
+
+    <!-- <news-search-list
+    (closeSearch)="backToAllPosts()"
+    [searchResults]="searchResults"
+    *ngIf="searchActive"
+  ></news-search-list> -->
+
+    <div>
+      <h1 class="article-h1">LATEST TECH NEWS</h1>
+      <div class="posts" *ngFor="let post of newsStories$ | async">
+        <a [href]="post.shortlink" target="_blank" class="posts-link">
+          <div class="posts-post-item">
+            <img
+              [src]="post.jetpack_featured_media_url"
+              alt="Article Image"
+              class="posts-post-item-img"
+            />
+            <br />
+            <h4
+              class="posts-post-item-title"
+              [innerHTML]="post.title.rendered"
+            ></h4>
+            <p
+              class="posts-post-item-slug"
+              [innerHTML]="post.excerpt.rendered"
+            ></p>
+          </div>
+        </a>
+      </div>
+      <!-- <nz-pagination
+      [nzPageIndex]="1"
+      [nzTotal]="numberOfPosts"
+      [nzPageSize]="10"
+      (nzPageIndexChange)="pageIndexChange($event)"
+      id="newsPage"
+    >
+    </nz-pagination>-->
+    </div>
+  </div>
+</div>
